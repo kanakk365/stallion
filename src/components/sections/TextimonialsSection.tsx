@@ -1,0 +1,90 @@
+import Image from "next/image"
+
+export default function TestimonialsSection() {
+  const testimonials = [
+    {
+      name: "Paul K",
+      title: "Fitness Influencer",
+      image: "/images/testimonials/paul.png",
+      quote: "Lost 28lbs of fat in 12 weeks. The trainers don't let you cheat – even when you want to.",
+      stars: 5,
+    },
+    {
+      name: "Syra",
+      title: "Make up artist",
+      image: "/images/testimonials/syra.png",
+      quote: "I spend 10-hour days making others look fierce—Stallion Extreme is where I unleash my own strength.",
+      stars: 5,
+    },
+    {
+      name: "Krishna",
+      title: "Footballer",
+      image: "/images/testimonials/krishna.png",
+      quote:
+        "This gym took my game from good to lethal. Coach explosive leg circuits added 3 yards to my sprint speed.",
+      stars: 5,
+    },
+  ]
+
+  // Calculate aspect ratio class for the cards (418:527)
+  const aspectRatio = 418 / 527
+
+  return (
+    <section className="py-20 bg-[url('/images/testimonials/bg.png')] bg-cover bg-center relative px-6 ">
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-md"></div>
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-center text-white mb-2">
+          Don&apos;t take our word for it
+        </h2>
+        <p className="text-center text-white mb-6">Hear from the Stallion herd.</p>
+
+        <div className="flex justify-center mb-12">
+          <div className="bg-[#e71b4b] px-6 py-2 text-white font-semibold">Client Testimonials</div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="border border-white/30  bg-white/10  p-6 flex flex-col"
+              style={{ 
+                backdropFilter: "blur 40px)",
+                aspectRatio: `${aspectRatio}`,
+                width: "100%"
+              }}
+            >
+              <div className="mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
+                  <Image
+                    src={testimonial.image || "/placeholder.svg"}
+                    alt={testimonial.name}
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-white text-lg">-{testimonial.name}</h4>
+                <p className="text-sm text-gray-300">{testimonial.title}</p>
+              </div>
+
+              <div className="mb-auto">
+                <span className="text-6xl text-white font-serif leading-none block mb-4">&ldquo;</span>
+                <p className="text-white text-lg leading-relaxed">{testimonial.quote}</p>
+              </div>
+
+              <div className="flex mt-4">
+                {Array(testimonial.stars)
+                  .fill(0)
+                  .map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-2xl">
+                      ★
+                    </span>
+                  ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
