@@ -64,10 +64,10 @@ export default function PartnersSection() {
   const displayPartners = [...partners, ...partners, ...partners]
 
   return (
-    <section className="py-16 bg-[#f4f4f4]">
+    <section className="py-10 md:py-16 bg-[#f4f4f4]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold uppercase tracking-wider text-center text-black mb-2">Powered by the best</h2>
-        <p className="text-center text-gray-600 mb-12">We only work with brands that match our extreme standards.</p>
+        <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-center text-black mb-2 font-['AkiraExpanded'] ">Powered by the best</h2>
+        <p className="text-center text-gray-600 mb-8 md:mb-12 text-lg md:text-2xl tracking-wider font-[Degular]">We only work with brands that match our extreme standards.</p>
 
         <div className="relative overflow-hidden">
           <div 
@@ -78,14 +78,14 @@ export default function PartnersSection() {
             {displayPartners.map((partner, i) => (
               <div
                 key={i}
-                className="border-2 py-16 flex items-center justify-center min-w-[200px] px-10 border-r border-gray-300"
+                className="border-2 py-12 md:py-20 flex items-center justify-center min-w-[150px] md:min-w-[200px] w-[250px] md:w-[300px] px-8 md:px-12 border-r border-gray-300"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
                   alt={partner.name}
                   width={120}
                   height={60}
-                  className="h-10 w-auto"
+                  className="h-8 md:h-10 w-auto"
                 />
               </div>
             ))}
