@@ -3,7 +3,7 @@ import { ArrowRight, Facebook, Instagram, Youtube } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#262626] py-16">
+    <footer className="bg-[#262626] py-16 px-7">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* CONTACT */}
@@ -92,7 +92,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-[#444444] text-center text-gray-400 text-sm">
+        <div className="pt-8 border-t border-white/50 text-center text-gray-400 text-sm">
           <p>&copy; 2025 Stallion Xtreme Fitness - All Right Reserved</p>
         </div>
       </div>

@@ -5,7 +5,7 @@ export default function TestimonialsSection() {
     {
       name: "Paul K",
       title: "Fitness Influencer",
-      image: "/images/testimonials/paul.png",
+      image: "/images/testimonials/jake.png",
       quote: "Lost 28lbs of fat in 12 weeks. The trainers don't let you cheat – even when you want to.",
       stars: 5,
     },
@@ -33,10 +33,10 @@ export default function TestimonialsSection() {
     <section className="py-20 bg-[url('/images/testimonials/bg.png')] bg-cover bg-center relative px-6 ">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-md"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-center text-white mb-2">
+        <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-center text-white mb-2 font-['AkiraExpanded']">
           Don&apos;t take our word for it
         </h2>
-        <p className="text-center text-white mb-6">Hear from the Stallion herd.</p>
+        <p className="text-center text-white mb-6 font-['Degular']   ">Hear from the Stallion herd.</p>
 
         <div className="flex justify-center mb-12">
           <div className="bg-[#e71b4b] px-6 py-2 text-white font-semibold">Client Testimonials</div>
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
               }}
             >
               <div className="mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mb-4">
+                <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                   <Image
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
@@ -64,19 +64,19 @@ export default function TestimonialsSection() {
                   />
                 </div>
                 <h4 className="font-semibold text-white text-lg">-{testimonial.name}</h4>
-                <p className="text-sm text-gray-300">{testimonial.title}</p>
+                <p className="text-md text-gray-300">{testimonial.title}</p>
               </div>
 
               <div className="mb-auto">
-                <span className="text-6xl text-white font-serif leading-none block mb-4">&ldquo;</span>
-                <p className="text-white text-lg leading-relaxed">{testimonial.quote}</p>
+                <span className="text-9xl font-bold text-white font-serif leading-none block -mb-8">&ldquo;</span>
+                <p className="text-white text-2xl leading-relaxed">{testimonial.quote}</p>
               </div>
 
-              <div className="flex mt-4">
+              <div className="flex pb-4">
                 {Array(testimonial.stars)
                   .fill(0)
                   .map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-2xl">
+                    <span key={i} className="text-yellow-400 text-4xl">
                       ★
                     </span>
                   ))}

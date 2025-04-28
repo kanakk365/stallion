@@ -76,25 +76,25 @@ export default function PricingSection() {
   ]
 
   return (
-    <section className="py-20 bg-[#262626] relative">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-center text-white mb-2">
+    <section className="py-20 bg-[#262626] relative px-8">
+      <div className="container mx-auto px-4 relative">
+        <p className="text-2xl md:text-2xl uppercase tracking-wider text-center text-white mb-2 font-['AkiraExpanded'] ">
           Invest in your strongest self
-        </h2>
-        <p className="text-center text-gray-300 mb-16">No hidden fees. Cancel anytime. Results guaranteed</p>
+        </p>
+        <p className="text-center text-gray-300 mb-16 font-['Degular'] tracking-wide ">No hidden fees. Cancel anytime. Results guaranteed</p>
 
-        <div className="text-[150px] font-bold text-white uppercase text-center leading-none mb-8 tracking-wider">
+        <div className="text-[150px] font-bold text-white uppercase text-center leading-none mb-8 tracking-wider font-['AkiraExpanded']">
           Pricing
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative -mt-20 z-10">
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className="border border-white/20 bg-black/20 backdrop-blur-md rounded-sm overflow-hidden"
-              style={{ backdropFilter: "blur(10px)" }}
+              className="border border-white/20 bg-white/7  backdrop-blur-md rounded-lg overflow-hidden flex flex-col"
+              style={{ aspectRatio: "319/641" }}
             >
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold uppercase tracking-wider text-white mb-4">{plan.name}</h3>
                 <div className="flex items-baseline mb-6">
                   <span className="text-2xl font-bold text-white">{plan.price}</span>
@@ -102,17 +102,17 @@ export default function PricingSection() {
                   <span className="text-gray-500 ml-2 line-through text-sm">{plan.originalPrice}</span>
                 </div>
 
-                <div className="space-y-3 mb-8">
+                <div className="space-y-3 mb-8 flex-grow">
                   {plan.features.map((feature, i) => (
                     <div key={i} className="flex items-start">
-                      <Check className="h-5 w-5 text-white mr-2 flex-shrink-0 mt-0.5" />
+                      <Check className="h-5 w-5 text-white mr-2 flex-shrink-0 mt-0.5 my-3" />
                       <span className="text-gray-300 text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="text-white mb-6">
-                  <span className="font-semibold">Duration : </span>
+                <div className="text-white mb-6 text-2xl">
+                  <span className="">Duration : </span>
                   {plan.duration}
                 </div>
 

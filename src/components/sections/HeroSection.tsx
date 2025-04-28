@@ -22,12 +22,12 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="container mx-auto px-4 z-20 text-center">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
+        <h1 className=" font-['AkiraExpanded'] text-5xl md:text-7xl lg:text-7xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
           Unleash your inner
           <br />
           stallion
         </h1>
-        <p className="text-xl md:text-2xl mb-10">Train Like an Athlete, Look Like a Champion</p>
+        <p className="text-xl md:text-2xl mb-10 font-['Degular'] ">Train Like an Athlete, Look Like a Champion</p>
         <div className="flex flex-wrap justify-center gap-6">
           <Link
             href="#"
