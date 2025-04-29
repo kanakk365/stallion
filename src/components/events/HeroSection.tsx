@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import Header from "../layout/Header"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import Header from "../layout/Header";
 
 export default function HeroSection() {
   return (
@@ -9,7 +9,7 @@ export default function HeroSection() {
       {/* Background image with bodybuilder */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/hero.png"
+          src="/images/events/hero.png"
           alt="Bodybuilder showing muscular back in gym"
           fill
           className="object-cover"
@@ -23,11 +23,13 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-4 z-20 text-center">
         <h1 className="font-['AkiraExpanded'] text-4xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
-          Unleash your inner
+          BATTLEGROUNDS DON&apos;T
           <br />
-          stallion
+          BUILD THEMSELVES
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular']">Train Like an Athlete, Look Like a Champion</p>
+        <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular']">
+          Monthly competitions Pro-led workshops Community crushers
+        </p>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           <Link
             href="#"
@@ -35,8 +37,8 @@ export default function HeroSection() {
           >
             Join now <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
           </Link>
-          <Link 
-            href="#" 
+          <Link
+            href="#"
             className="border border-white text-white px-6 sm:px-8 py-2 hover:bg-white/10 transition text-sm sm:text-base"
           >
             Explore now
@@ -44,5 +46,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -13,8 +13,8 @@ export default function Header() {
   }
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 py-4 md:py-8">
-      <div className="mx-auto px-4 md:px-12">
+    <header className="absolute top-0 left-0 right-0 z-50 py-4 mt-2 md:py-4">
+      <div className="mx-auto px-3 md:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Logo />
@@ -26,31 +26,28 @@ export default function Header() {
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
+              <X className="h-5 w-5" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-5 w-5" />
             )}
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 text-white">
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
+          <nav className="hidden md:flex items-center space-x-6 text-white">
+            <Link href="/" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
               Home
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
-              About
+            <Link href="/about-us" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
+              About Us
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
-              Classes
+            <Link href="/events" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
+              Events
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
-              Training
+            <Link href="/branches" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
+              Branches
             </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
-              Pricing
-            </Link>
-            <Link href="#" className="text-white hover:text-[#e71b4b] transition text-sm md:text-xl">
-              Contact
+            <Link href="stallions" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
+              Stallion Classic
             </Link>
           </nav>
 
@@ -58,7 +55,7 @@ export default function Header() {
           <div className="hidden md:block">
             <Link
               href="#"
-              className="bg-[#e71b4b] text-white px-6 py-3 hover:bg-opacity-90 transition md:text-xl"
+              className="bg-[#e71b4b] text-white px-4 py-2 hover:bg-opacity-90 transition md:text-base"
             >
               Join Now
             </Link>
@@ -67,55 +64,48 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-black bg-opacity-95 fixed inset-0 top-16 z-40 flex flex-col">
-            <div className="flex flex-col items-center justify-center space-y-6 py-10">
+          <div className="md:hidden bg-black bg-opacity-95 fixed inset-0 top-14 z-40 flex flex-col">
+            <div className="flex flex-col items-center justify-center space-y-4 py-6">
               <Link 
                 href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
+                className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
+                className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                About
+                About Us
               </Link>
               <Link 
                 href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
+                className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Classes
+                Events
               </Link>
               <Link 
                 href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
+                className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Training
+                Branches
               </Link>
               <Link 
                 href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
+                className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Pricing
-              </Link>
-              <Link 
-                href="#" 
-                className="text-white hover:text-[#e71b4b] transition text-xl"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact
+                Stallion Classic
               </Link>
               
-              <div className="pt-4">
+              <div className="pt-3">
                 <Link
                   href="#"
-                  className="bg-[#e71b4b] text-white px-6 py-2 hover:bg-opacity-90 transition text-base"
+                  className="bg-[#e71b4b] text-white px-4 py-1.5 hover:bg-opacity-90 transition text-sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Join Now

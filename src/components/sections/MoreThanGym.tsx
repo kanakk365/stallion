@@ -10,13 +10,13 @@ export default function MoreThanGymSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
             <div className="relative"> 
               {/* Red vertical bars that touch the heading text - hidden on mobile */}
-              <div className="absolute left-0 -top-28 md:-top-56 h-[150px] md:h-[250px] w-10 md:w-16 hidden md:flex space-x-1 md:space-x-2">
+              <div className="absolute left-0 -top-28 md:-top-52 h-[150px] md:h-[240px] w-10 md:w-16 hidden md:flex space-x-1 md:space-x-2">
                 <div className="bg-[#e71b4b] w-5 md:w-10 h-full"></div>
                 <div className="bg-[#e71b4b] w-5 md:w-10 h-full"></div>
               </div>
 
               {/* Blue vertical bars at bottom - hidden on mobile */}
-              <div className="absolute left-0 -bottom-28 md:-bottom-56 h-[150px] md:h-[250px] w-10 md:w-16 hidden md:flex space-x-1">
+              <div className="absolute left-0 -bottom-28 md:-bottom-52 h-[150px] md:h-[240px] w-10 md:w-16 hidden md:flex space-x-1">
                 <div className="bg-[#0f4166] w-5 md:w-10 h-full"></div>
                 <div className="bg-[#0f4166] w-5 md:w-10 h-full"></div>
               </div>

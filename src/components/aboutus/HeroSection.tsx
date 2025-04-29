@@ -3,13 +3,13 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import Header from "../layout/Header"
 
-export default function HeroSection() {
+export default function AboutHeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image with bodybuilder */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero/hero.png"
+          src="/images/aboutus/about.png"
           alt="Bodybuilder showing muscular back in gym"
           fill
           className="object-cover"
@@ -23,11 +23,11 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-4 z-20 text-center">
         <h1 className="font-['AkiraExpanded'] text-4xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
-          Unleash your inner
+          FROM 1 RACK TO 1000
           <br />
-          stallion
+          TONNES OF IRON
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular']">Train Like an Athlete, Look Like a Champion</p>
+        <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular']">Pro athletes train here . So should you</p>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           <Link
             href="#"
