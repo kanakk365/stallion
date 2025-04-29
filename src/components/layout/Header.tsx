@@ -54,10 +54,10 @@ export default function Header() {
           {/* Contact Button - Desktop Only */}
           <div className="hidden md:block">
             <Link
-              href="#"
+              href="/contact"
               className="bg-[#e71b4b] text-white px-4 py-2 hover:bg-opacity-90 transition md:text-base"
             >
-              Join Now
+              Contact Us
             </Link>
           </div>
         </div>

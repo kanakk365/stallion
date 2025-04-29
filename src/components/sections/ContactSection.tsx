@@ -22,7 +22,7 @@ export default function ContactSection() {
               style={{ backdropFilter: "blur(2px)" }}
             ></div>
             <div className="relative z-20 p-4 md:p-6 h-full flex flex-col justify-center items-start font-['AkiraExpanded'] ">
-              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold uppercase tracking-wider text-white leading-tight mb-4 md:mb-6">
+              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold uppercase font-['AkiraExpanded']text-white leading-tight mb-4 md:mb-6">
                 GOT QUESTIONS
                 <br />
                 WE&apos;VE GOT
@@ -58,7 +58,10 @@ export default function ContactSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                   <div>
-                    <label htmlFor="email" className="block text-base font-medium text-black uppercase mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-base font-medium text-black uppercase mb-2"
+                    >
                       EMAIL
                     </label>
                     <input
@@ -69,7 +72,10 @@ export default function ContactSection() {
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-base font-medium text-black uppercase mb-2">
+                    <label
+                      htmlFor="phone"
+                      className="block text-base font-medium text-black uppercase mb-2"
+                    >
                       PHONE NO.
                     </label>
                     <input
@@ -81,7 +87,10 @@ export default function ContactSection() {
                 </div>
 
                 <div className="mb-10">
-                  <label htmlFor="subject" className="block text-base font-medium text-black uppercase mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-base font-medium text-black uppercase mb-2"
+                  >
                     SUBJECT
                   </label>
                   <div className="relative">
@@ -115,7 +124,10 @@ export default function ContactSection() {
                 </div>
 
                 <div className="mb-16">
-                  <label htmlFor="message" className="block text-base font-medium text-black uppercase mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-base font-medium text-black uppercase mb-2"
+                  >
                     MESSAGE
                   </label>
                   <textarea
