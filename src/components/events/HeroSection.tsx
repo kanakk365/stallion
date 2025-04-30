@@ -22,7 +22,7 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="container mx-auto px-4 z-20 text-center">
-        <h1 className="font-['AkiraExpanded'] text-4xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
+        <h1 className="font-['AkiraExpanded'] text-2xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight">
           BATTLEGROUNDS DON&apos;T
           <br />
           BUILD THEMSELVES

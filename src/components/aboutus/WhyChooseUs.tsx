@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-20 bg-[#1a1a1a] text-white px-8 ">
+    <section className="py-20 bg-[#1a1a1a] text-white px-2 sm:px-8 ">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-center text-white mb-4 font-['AkiraExpanded'] ">
           WHY CHOOSE US

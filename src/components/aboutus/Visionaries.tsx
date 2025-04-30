@@ -41,7 +41,7 @@ export default function VisionariesSection() {
 
         {/* Second Founder - Suresh */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center mb-12 md:mb-16">
-          <div className="relative w-full aspect-[4/3] md:aspect-[638/467] mx-auto order-1 md:order-1">
+          <div className="relative w-full aspect-[4/3] md:aspect-[638/467] mx-auto order-2 md:order-1">
             <Image
               src="/images/aboutus/suresh.png"
               alt="Suresh - IFBB Pro Founder"
@@ -49,7 +49,7 @@ export default function VisionariesSection() {
               className="object-cover "
             />
           </div>
-          <div className="order-2 md:order-2">
+          <div className="order-1 md:order-2">
             <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wider text-white mb-1 font-['AkiraExpanded']">SURESH</h3>
             <p className="text-gray-400 mb-4 md:mb-6 font-[Degular] tracking-wider">IFBB Pro Founder</p>
 

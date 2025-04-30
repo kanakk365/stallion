@@ -33,7 +33,7 @@ export default function EventsSection() {
   ]
 
   return (
-    <section className="py-20 bg-white px-6">
+    <section className="py-20 bg-white px-2 sm:px-6">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-3xl font-bold uppercase tracking-wider text-center text-black mb-4 font-['AkiraExpanded'] ">
           UPCOMING EVENTS

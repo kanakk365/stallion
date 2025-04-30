@@ -46,7 +46,7 @@ export default function Header() {
             <Link href="/branches" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
               Branches
             </Link>
-            <Link href="stallions" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
+            <Link href="/stallions" className="text-white hover:text-[#e71b4b] transition text-xs md:text-base">
               Stallion Classic
             </Link>
           </nav>
@@ -67,35 +67,35 @@ export default function Header() {
           <div className="md:hidden bg-black bg-opacity-95 fixed inset-0 top-14 z-40 flex flex-col">
             <div className="flex flex-col items-center justify-center space-y-4 py-6">
               <Link 
-                href="#" 
+                href="/" 
                 className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
-                href="#" 
+                href="/about-us" 
                 className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link 
-                href="#" 
+                href="/events" 
                 className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Events
               </Link>
               <Link 
-                href="#" 
+                href="/branches" 
                 className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Branches
               </Link>
               <Link 
-                href="#" 
+                href="/stallions" 
                 className="text-white hover:text-[#e71b4b] transition text-base"
                 onClick={() => setMobileMenuOpen(false)}
               >
