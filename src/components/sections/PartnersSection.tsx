@@ -2,6 +2,8 @@
 
 import Image from "next/image"
 import { useEffect, useRef } from "react"
+import ScrollAnimation from "../ui/ScrollAnimation"
+import { motion } from "framer-motion"
 
 export default function PartnersSection() {
   const marqueeRef = useRef<HTMLDivElement>(null)
@@ -66,8 +68,10 @@ export default function PartnersSection() {
   return (
     <section className="py-10 md:py-16 bg-[#f4f4f4]">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-center text-black mb-2 font-['AkiraExpanded'] ">Powered by the best</h2>
-        <p className="text-center text-gray-600 mb-8 md:mb-12 text-lg md:text-2xl tracking-wider font-[Degular]">We only work with brands that match our extreme standards.</p>
+        <ScrollAnimation>
+          <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-center text-black mb-2 font-['AkiraExpanded'] ">Powered by the best</h2>
+          <p className="text-center text-gray-600 mb-8 md:mb-12 text-lg md:text-2xl tracking-wider font-[Degular]">We only work with brands that match our extreme standards.</p>
+        </ScrollAnimation>
 
         <div className="relative overflow-hidden">
           <div 
@@ -76,9 +80,14 @@ export default function PartnersSection() {
             style={{ willChange: "transform" }}
           >
             {displayPartners.map((partner, i) => (
-              <div
+              <motion.div
                 key={i}
                 className="border-2 py-12 md:py-20 flex items-center justify-center min-w-[150px] md:min-w-[200px] w-[250px] md:w-[300px] px-8 md:px-12 border-r border-gray-300"
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 10px 15px rgba(0,0,0,0.1)",
+                  transition: { duration: 0.2 }
+                }}
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
@@ -87,7 +96,7 @@ export default function PartnersSection() {
                   height={60}
                   className="h-8 md:h-10 w-auto"
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
