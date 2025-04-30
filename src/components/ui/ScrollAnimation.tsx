@@ -20,7 +20,7 @@ export default function ScrollAnimation({
   ...props
 }: ScrollAnimationProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, threshold });
+  const isInView = useInView(ref, { once, amount: threshold });
   const controls = useAnimation();
 
   useEffect(() => {

@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import ScrollAnimation, { HoverCard } from "../ui/ScrollAnimation"
+import ScrollAnimation from "../ui/ScrollAnimation"
 import { motion } from "framer-motion"
 
 export default function VisionariesSection() {

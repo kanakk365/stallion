@@ -19,7 +19,7 @@ export default function AboutStallions() {
         <ScrollAnimation delay={0.2}>
           <div className="max-w-6xl mx-auto font-[Degular] tracking-wider text-base sm:text-lg font-semibold">
             <p className="text-center text-gray-800 mb-6 sm:mb-8 md:mb-10 leading-relaxed">
-              Stallion Classic is Hyderabad's premier elite physique competition,
+              Stallion Classic is Hyderabad&apos;s premier elite physique competition,
               where raw discipline meets the spotlight. Founded under the Stallion
               Xtreme Fitness legacy, this pro-level showdown elevates amateur
               athletes into champions across Bodybuilding, Fitness Modeling,
@@ -27,11 +27,11 @@ export default function AboutStallions() {
             </p>
 
             <p className="text-center text-gray-800 leading-relaxed">
-              With judges from the IFBB and national magazines, it's the only
+              With judges from the IFBB and national magazines, it&apos;s the only
               stage in India where conditioning, symmetry, and stage presence are
-              tested under championship lights. Winners don't just take home
+              tested under championship lights. Winners don&apos;t just take home
               trophies—they earn sponsorships, media features, and a ticket to the
-              pros. Whether you're sculpted for the camera or built for the
+              pros. Whether you&apos;re sculpted for the camera or built for the
               platform, Stallion Classic separates the dedicated from the
               dreamers.
             </p>
