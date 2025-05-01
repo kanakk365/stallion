@@ -37,12 +37,12 @@ export default function Footer() {
           <h3 className="text-lg md:text-xl font-bold mb-4 text-white">Quick Links</h3>
           <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
             <li>
-              <Link href="#" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="/" className="text-gray-300 hover:text-[#e71b4b] transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="/about-us" className="text-gray-300 hover:text-[#e71b4b] transition">
                 About Us
               </Link>
             </li>
@@ -57,7 +57,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="/contact" className="text-gray-300 hover:text-[#e71b4b] transition">
                 Contact
               </Link>
             </li>
@@ -69,7 +69,7 @@ export default function Footer() {
           <h3 className="text-lg md:text-xl font-bold mb-4 text-white">Membership</h3>
           <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
             <li>
-              <Link href="#" className="text-gray-300 hover:text-[#e71b4b] transition">
+              <Link href="/contact" className="text-gray-300 hover:text-[#e71b4b] transition">
                 Join Now
               </Link>
             </li>
