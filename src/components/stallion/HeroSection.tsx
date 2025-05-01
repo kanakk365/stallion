@@ -26,7 +26,7 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-3 sm:px-4 z-20 text-center">
         <motion.h1 
-          className="font-['AkiraExpanded'] text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold uppercase tracking-wider mb-3 sm:mb-4 leading-tight"
+          className="font-['AkiraExpanded'] text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold uppercase tracking-wider mb-3 sm:mb-4 leading-tight text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
           ON POSEDOWN
         </motion.h1>
         <motion.p 
-          className="text-base sm:text-lg md:text-xl lg:text-2xl mb-5 sm:mb-6 md:mb-8 lg:mb-10 font-['Degular']"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl mb-5 sm:mb-6 md:mb-8 lg:mb-10 font-['Degular'] text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}

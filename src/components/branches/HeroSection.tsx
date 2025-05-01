@@ -26,7 +26,7 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-4 z-20 text-center">
         <motion.h1 
-          className="font-['AkiraExpanded'] text-4xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight"
+          className="font-['AkiraExpanded'] text-4xl sm:text-5xl md:text-7xl lg:text-5xl font-extrabold uppercase tracking-wider mb-4 leading-tight text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           IRON TEMPLE
         </motion.h1>
         <motion.p 
-          className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular']"
+          className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-10 font-['Degular'] text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}

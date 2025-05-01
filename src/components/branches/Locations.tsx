@@ -106,12 +106,12 @@ export default function Locations() {
                             whileTap={{ scale: 0.98 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Link
+                            {/* <Link
                               href={`/locations/${location.id}`}
                               className="px-4 sm:px-6 py-2 text-sm sm:text-base border border-white/50 text-white hover:bg-white/10 transition flex items-center"
                             >
                               View More
-                            </Link>
+                            </Link> */}
                           </motion.div>
                           
                           <motion.div

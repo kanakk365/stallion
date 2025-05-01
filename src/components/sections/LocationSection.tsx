@@ -61,7 +61,7 @@ export default function LocationsSection() {
                   <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-wider font-[Degular] text-white mb-2">{location.name}</h3>
                   <p className="text-gray-200 text-base md:text-lg mb-4">{location.description}</p>
                   <Link
-                    href="#"
+                    href="/branches"
                     className="inline-flex items-center bg-[#e71b4b] text-white px-3 md:px-4 py-2 rounded hover:bg-opacity-90 transition text-sm md:text-base"
                   >
                     Know More <ArrowRight className="ml-1 h-4 w-4" />

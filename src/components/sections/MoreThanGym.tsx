@@ -48,7 +48,7 @@ export default function MoreThanGymSection() {
                 <div className="flex justify-end mb-4">
                   <HoverCard>
                     <Link
-                      href="#"
+                      href="/about-us"
                       className="bg-[#e71b4b] text-white px-6 md:px-8 py-2 flex items-center hover:bg-opacity-90 transition text-sm md:text-base"
                     >
                       Know More <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />

@@ -55,7 +55,7 @@ export default function HeroSection() {
             transition={{ duration: 0.2 }}
           >
             <Link
-              href="#"
+              href="/contact"
               className="bg-[#e71b4b] text-white px-6 sm:px-8 py-2 flex items-center hover:bg-opacity-90 transition text-sm sm:text-base"
             >
               Join now <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
@@ -67,7 +67,7 @@ export default function HeroSection() {
             transition={{ duration: 0.2 }}
           >
             <Link 
-              href="#" 
+              href="/contact" 
               className="border border-white text-white px-6 sm:px-8 py-2 flex items-center hover:bg-white/10 transition text-sm sm:text-base"
             >
               Explore now
