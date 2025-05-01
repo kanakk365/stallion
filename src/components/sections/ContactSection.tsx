@@ -22,7 +22,7 @@ export default function ContactSection() {
               style={{ backdropFilter: "blur(2px)" }}
             ></div>
             <div className="relative z-20 p-4 md:p-6 h-full flex flex-col justify-center items-start font-['AkiraExpanded'] ">
-              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold uppercase font-['AkiraExpanded']text-white leading-tight mb-4 md:mb-6">
+              <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-bold uppercase font-['AkiraExpanded'] text-white leading-tight mb-4 md:mb-6">
                 GOT QUESTIONS
                 <br />
                 WE&apos;VE GOT

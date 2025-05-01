@@ -104,11 +104,11 @@ export default function Header() {
               
               <div className="pt-3">
                 <Link
-                  href="#"
+                  href="/contact"
                   className="bg-[#e71b4b] text-white px-4 py-1.5 hover:bg-opacity-90 transition text-sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Join Now
+                  Contact Us
                 </Link>
               </div>
             </div>
